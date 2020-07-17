@@ -1,9 +1,8 @@
 body {
-	Font: 30px; Comicsans
-        width: 100wh;
-	height: 90vh;
-	color: white;
 	
+	color: white;
+	font-family: comic-sans;
+	font-size: 150%;
 p {
   color: white;
 	font: 30px
