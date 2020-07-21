@@ -2,7 +2,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap" rel="stylesheet">
 <style>
 body {
-	background-image: url("https://cdn.wallpaperhub.app/cloudcache/1/b/5/8/e/f/1b58ef6e3d36a42e01992accf5c52d6eea244353.jpg");
 	font-family: 'Catamaran', sans-serif;
 	font-size: 150%;
 	
@@ -13,10 +12,16 @@ h1 {
 }
 	
 	
-p {
-  color: white;
+p.intro {
+  color: black;
 	font-family: 'Catamaran', sans-serif;
 	font: 20px
+}
+p.orly {
+	color: purple;
+	font-family: 'Catamaran', sans-serif;
+	font: 20px
+	
 }
 h4.location {
 	font-family: 'Catamaran', sans-serif;
