@@ -1,5 +1,8 @@
 
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap" rel="stylesheet">
 <style>
-
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap" rel="stylesheet">
+body{
+  font-family: catamaran;
+  color: white;
+}
 </style>
