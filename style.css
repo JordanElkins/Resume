@@ -1,36 +1,50 @@
 body {
-	
+	font-size: 20px ;
 	color: white;
 	font-family: 'Catamaran', sans-serif;
+	letter-spacing: -.5px;
+	line-height: 125%;
 	
 }
+
+	
+
 ul {
-	font-size: 18px
+	font-size: 20px;
+	line-height: 120%;
 }
 #tag{
 	text-align: center;
-	font-size: 20px;
-	text-decoration: underline
+	font-size: 23px;
+	text-decoration: underline;
+	padding-bottom: 15px;
+	line-height: 10%
+	
 
 }
 h1 {
-	font-size: 50px;
-	
-	}
-#pro {
+	line-height: 80%;
 	text-align: center;
-	font-size: 25px;
-	border: 5px dashed white;
-	border-radius: 50px;
+	font-size: 50px;
+	letter-spacing: 0px;
+	
+}
+#pro {
+    text-align: center;
+	letter-spacing: 5px;
+    font-size: 25px;
+    border: 3px dashed white;
+    border-radius: 50px;
 }
 #contact{
+	text-align: center;
+	font-size:30px;
 	
-	font-size: 21px
 }
-
 #edu{
 	text-align: center;
+	letter-spacing: 5px;
 	font-size: 25px;	
-	border: 5px dashed white;
+	border: 3px dashed white;
     border-radius: 50px;
 }
