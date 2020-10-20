@@ -1,51 +1,107 @@
 body {
-	font-size: 20px ;
-	color: white;
-	font-family: 'Catamaran', sans-serif;
-	letter-spacing: -.5px;
-	line-height: 125%;
-	
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    line-height: 125%;
 }
 
-	
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
 ul {
-	font-size: 20px;
-	line-height: 120%;
+    font-size: 20px;
+    line-height: 120%;
 }
-#tag{
-	text-align: center;
-	font-size: 23px;
-	text-decoration: underline;
-	padding-bottom: 15px;
-	line-height: 10%
-	display: inline;
-	
 
-}
-h1 {
-	line-height: 80%;
-	text-align: center;
-	font-size: 50px;
-	letter-spacing: 0px;
-	
-}
-#pro {
+#tag {
+    word-wrap: break-word;
     text-align: center;
-	letter-spacing: 5px;
     font-size: 25px;
-    border: 3px dashed white;
-    border-radius: 50px;
+    text-decoration: underline;
+    padding-bottom: 15px;
 }
-#contact{
-	text-align: center;
-	font-size:30px;
-	
+
+h1 {
+    font-variant-caps: all-petite-caps;
+    line-height: 80%;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 60px;
 }
-#edu{
-	text-align: center;
-	letter-spacing: 5px;
-	font-size: 25px;	
-	border: 3px dashed white;
-    border-radius: 50px;
+
+h3 {
+    font-variant-caps: petite-caps;
+    font-size: 30px;
+}
+
+#email:link {
+    color: blue;
+}
+
+#email:hover {
+    color: white;
+}
+
+#gh:hover {
+    color: white;
+}
+
+#gh:link {
+    color: blue;
+}
+
+#gh:visited {
+    color: white;
+}
+
+#GH:visited {
+    color: white;
+}
+
+#pro {
+    font-variant-caps: petite-caps;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+#contact {
+    font-variant-caps: petite-caps;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 25px;
+    line-height: 120%;
+}
+
+#edu {
+    font-variant-caps: petite-caps;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    font-size: 30px;
 }
