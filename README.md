@@ -1,1 +1,1 @@
-Jordan Elkins Resume - https://bigcountry182.github.io/Resume
+Jordan Elkins Resume - https://JordanElkins.github.io/Resume
