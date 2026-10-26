@@ -1,111 +1,256 @@
-body {
-    margin-bottom: 10%;
-    margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    line-height: 125%;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
 }
 
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+  margin: 0;
+  background: #f1f3f5;
+  color: #202329;
+  font-family: "Century Gothic", "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+.resume {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 48px 52px;
+  background: white;
+  box-shadow: 0 6px 32px #18243312;
 }
 
-#underline{
-    text-decoration: underline;
-}
-
-ul {
-    font-size: 20px;
-    line-height: 120%;
-}
-
-#tag {
-    word-wrap: break-word;
-    text-align: center;
-    font-size: 25px;
-    text-decoration: underline;
-    padding-bottom: 15px;
+header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 h1 {
-    font-variant-caps: all-petite-caps;
-    line-height: 80%;
-    width: fit-content;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    font-size: 60px;
+  font-size: clamp(28px, 5vw, 43px);
+  font-weight: 400;
+  letter-spacing: .055em;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.tagline {
+  border-block: 1px solid #888;
+  padding: 11px 0;
+  font-size: 14px;
+  letter-spacing: .11em;
+  margin: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+  gap: 40px;
+}
+
+section {
+  margin-bottom: 27px;
+}
+
+h2 {
+  font-size: 13px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  font-weight: 700;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 54px;
+  height: 2px;
+  background: #343a40;
+  margin-top: 9px;
+}
+
+p {
+  margin: 0 0 5px;
 }
 
 h3 {
-    font-variant-caps: petite-caps;
-    font-size: 30px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 0 0 3px;
 }
 
-#email:link {
-    color: blue;
+.organization {
+  margin-bottom: 2px;
 }
 
-#email:hover {
-    color: white;
+.dates {
+  font-size: 13px;
+  font-weight: 600;
+  color: #51565f;
+  margin-bottom: 8px;
 }
 
-#gh:hover {
-    color: white;
+.role {
+  margin-bottom: 23px;
 }
 
-#gh:link {
-    color: blue;
+.role:last-child {
+  margin-bottom: 0;
 }
 
-#gh:visited {
-    color: white;
+.skills {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#GH:visited {
-    color: white;
+.skills li {
+  margin-bottom: 3px;
 }
 
-#pro {
-    font-variant-caps: petite-caps;
-    text-align: center;
-    width: fit-content;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 30px;
+a {
+  color: inherit;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
 }
 
-#contact {
-    font-variant-caps: petite-caps;
-    text-align: center;
-    padding-top: 10px;
-    font-size: 25px;
-    line-height: 120%;
+a:hover {
+  color: #235d88;
 }
 
-#edu {
-    font-variant-caps: petite-caps;
-    text-align: center;
-    width: fit-content;
-    margin: auto;
-    padding: 20px;
-    font-size: 30px;
+a:focus-visible {
+  outline: 2px solid #235d88;
+  outline-offset: 4px;
+}
+
+aside {
+  font-size: 14px;
+}
+
+#education + p {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .resume {
+    margin: 0;
+    padding: 28px 22px;
+    box-shadow: none;
+  }
+
+  .columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  header {
+    margin-bottom: 26px;
+  }
+
+  .tagline {
+    font-size: 12px;
+    letter-spacing: .07em;
+  }
+
+  aside {
+    font-size: 15px;
+  }
+
+  .skills {
+    columns: 2;
+    column-gap: 20px;
+  }
+
+  .skills li {
+    break-inside: avoid;
+  }
+
+  section {
+    margin-bottom: 26px;
+  }
+}
+
+@media print {
+  @page {
+    size: letter;
+    margin: .45in;
+  }
+
+  body {
+    background: white;
+    font-size: 9pt;
+    line-height: 1.33;
+  }
+
+  .resume {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  header {
+    margin-bottom: 18px;
+  }
+
+  h1 {
+    font-size: 28pt;
+    margin-bottom: 12px;
+  }
+
+  .tagline {
+    font-size: 9pt;
+    padding: 7px 0;
+  }
+
+  .columns {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2.1fr);
+    gap: 26px;
+  }
+
+  aside {
+    font-size: 8.5pt;
+  }
+
+  h2 {
+    font-size: 9pt;
+    margin-bottom: 9px;
+  }
+
+  h2::after {
+    margin-top: 5px;
+  }
+
+  h3 {
+    font-size: 10pt;
+  }
+
+  .dates {
+    font-size: 8.5pt;
+    margin-bottom: 5px;
+  }
+
+  section {
+    margin-bottom: 16px;
+  }
+
+  .role {
+    margin-bottom: 14px;
+    break-inside: avoid;
+  }
+
+  p {
+    margin-bottom: 3px;
+  }
+
+  .skills li {
+    margin-bottom: 1px;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
